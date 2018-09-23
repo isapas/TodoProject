@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
+  <title>TodoProject</title>
+  <meta name="description" content="projet de todolist">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -17,84 +17,120 @@
 </head>
 
 <body>
-
+<!-- header and footer are the same in all pages-->
 <header>
-  <h1 id="Projecttitle">Mes projets en cours</h1>
-  <button type="button" name="se déconnecter"></button>
-  <!-- insert <<a href="vers log out">? -->
+  <h1 class="Projecttitle">Bienvenue dans l'espace de travail</h1>
+<a href="#" class="signout">Déconnection</a>
+  <!-- insert <<a href=" to log out">? -->
 </header>
-<main>
-  <section>
-    <!-- clickable card to create a new project. will open a pop up form -->
-    <div>
-      <a href="url">Nouveau projet</a> <!-- "url"= lien vers formulaire -->
-    </div>
-<!-- clickable card with principal items of the project -->
-    <article id="ProjectCard">
-      <h2 id="ProjectName" >"Nom du projet"</h2>
-
-        <p id="description"> description du projet</p>
-        <p>état d'avancement<p>
-          <p><progress id="avancement" value="50" max="100"></progress></p>
-
-        <ul id="coworker">
-          <li> cowerkeruser</li>
-          <li> cowerker1</li>
-          <li> cowerker2</li>
-          <li> cowerker3</li>
-        </ul>
-    </article>
-
-    <article id= "ProjectCard">
-      <h2 id="ProjectName" >"Nom du projet"</h2>
-
-        <p id="description"> description du projet</p>
-        <p>état d'avancement</p>
-        <p><progress id="avancement" value="50" max="100"></progress></p>
-
-        <ul id= coworker>
-          <li> cowerkeruser</li>
-          <li> cowerker1</li>
-          <li> cowerker2</li>
-          <li> cowerker3</li>
-        </ul>
-    </article>
-
-    <article id= "ProjectCard">
-      <h2 id="ProjectName" >"Nom du projet"</h2>
-
-        <p id="description"> description du projet</p>
-        <p>état d'avancement</p>
-        <p><progress id="avancement" value="50" max="100"></progress></p>
-
-        <ul id= coworker>
-          <li> cowerkeruser</li>
-          <li> cowerker1</li>
-          <li> cowerker2</li>
-          <li> cowerker3</li>
-        </ul>
-    </article>
-    <article id= "ProjectCard">
-      <h2 id="ProjectName" >"Nom du projet"</h2>
-
-        <p id="description"> description du projet</p>
-        <p>état d'avancement</p>
-        <p><progress id="avancement" value="50" max="100"></progress></p>
-
-        <ul id= coworker>
-          <li> cowerkeruser</li>
-          <li> cowerker1</li>
-          <li> cowerker2</li>
-          <li> cowerker3</li>
-        </ul>
-    </article>
-  </section>
-</main>
 
 <footer>
+<!-- informations about the society and contacts administrator and légal notice -->
+  <p class="adresse">société Moreau SA<br>
+  12, rue du puit<br>
+  59100 ROUBAIX 20 00 00 00<br>
+  tel: 03 20 00 00 00</p>
 
+  <P class="mail"> Moreau.sa@gmail.com</p>
+  <a class="mentions légales" href="https://url.com/" > Mentions légales</a>
+</footer>
 
+<main>
 
+  <section id="projectcards">
+    <!-- clickable card to create a new project. will open a pop up form -->
+      <h2>Projets en cours</h2>
+
+      <div class="projectcards">
+
+        <a href="url">Nouveau projet</a> <!-- "url"= lien vers formulaire -->
+      </div id= "cards">
+
+    <nav>
+      <ul>
+        <li class="projet1"><a href= "projet1">projet 1</a></li>
+        <li class="projet2"><a href= "projet2">projet 2</a></li>
+        <li class="projet3"><a href= "projet3">projet 3</a></li>
+        <li class="projet4"><a href= "projet4">projet 4</a></li>
+        <li class="projet5"><a href= "projet5">projet 5</a></li>
+        <li class="projet6"><a href= "projet6">projet 6</a></li>
+      </nav>
+<!-- clickable card with principal items of the project -->
+    <article>
+
+      <h3 class="ProjectName" >"Nom du projet"</h3>
+
+          <p>Deadline<p>
+          <p><progress class="avancement" value="50" max="100"></progress></p>
+
+        <ul class="coworker">
+          <li> cowerkeruser</li>
+          <li> cowerker1</li>
+          <li> cowerker2</li>
+          <li> cowerker3</li>
+        </ul>
+
+          <p class="description"> description du projet</p>
+
+    </article>
+
+    <article>
+
+      <h3 class="ProjectName" >"Nom du projet"</h3>
+
+          <p>Deadline<p>
+          <p><progress class="avancement" value="50" max="100"></progress></p>
+
+        <ul class="coworker">
+          <li> cowerkeruser</li>
+          <li> cowerker1</li>
+          <li> cowerker2</li>
+          <li> cowerker3</li>
+        </ul>
+
+          <p class="description"> description du projet</p>
+
+    </article>
+
+    <article>
+
+      <h3 class="ProjectName" >"Nom du projet"</h3>
+
+          <p>Deadline<p>
+          <p><progress class="avancement" value="50" max="100"></progress></p>
+
+        <ul class="coworker">
+          <li> cowerkeruser</li>
+          <li> cowerker1</li>
+          <li> cowerker2</li>
+          <li> cowerker3</li>
+        </ul>
+
+          <p class="description"> description du projet</p>
+
+    </article>
+
+    <article>
+
+      <h3 class="ProjectName" >"Nom du projet"</h3>
+
+          <p>Deadline<p>
+          <p><progress class="avancement" value="50" max="100"></progress></p>
+
+        <ul class="coworker">
+          <li> cowerkeruser</li>
+          <li> cowerker1</li>
+          <li> cowerker2</li>
+          <li> cowerker3</li>
+        </ul>
+
+          <p class="description"> description du projet</p>
+
+    </article>
+
+  </section>
+
+</main>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
