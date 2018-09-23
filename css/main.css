@@ -96,22 +96,25 @@ body {
 }
 
 header {
-
+  display: flex;
+    width: auto;
     background-color: #90AB2B
-
 }
 
 h1 {
     text-align: center;
     font-family: monospace, Georgia;
-    font-size:
+    font-size:2em;
     color: #0C3343;
-    position: static;
-
+    margin: 8px;
 }
 
+
 .signout {
-    position: rightstatic;
+
+    float: right ;
+    width:80px;
+
     -moz-box-shadow: 0px 10px 14px -7px #3e7327;
   	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
   	box-shadow: 0px 10px 14px -7px #3e7327;
@@ -150,27 +153,30 @@ h1 {
 .signout:active {
     position:relative;
     top:1px;
+}
 
-}
-footer {
-    background-color: #90AB2B
-}
-.adresse {
-  font-family: sans-serif;
-  font-size: 12px;
-  position: static;
-}
-.mail {
-  font-family: Times,monospace,inherit;
-  font-size: 0.9em;
-  position: static;
-}
 main {
 
 
 }
 
+footer {
+    background-color: #90AB2B
+    
+}
+.adresse {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: inherit;
+  border-left: 5px;
+}
+.admin {
+  font-family: Times,monospace,inherit;
+  font-size: 0.9em;
+  float: right;
 
+
+}
 
 
 

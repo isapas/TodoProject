@@ -19,24 +19,14 @@
 <body>
 <!-- header and footer are the same in all pages-->
 <header>
+<section id = "welcoming">
   <h1 class="Projecttitle">Bienvenue dans l'espace de travail</h1>
-<a href="#" class="signout">Déconnection</a>
+  <a href="#" class="signout">Déconnection</a>
   <!-- insert <<a href=" to log out">? -->
+</section>
 </header>
 
-<footer>
-<!-- informations about the society and contacts administrator and légal notice -->
-  <p class="adresse">société Moreau SA<br>
-  12, rue du puit<br>
-  59100 ROUBAIX 20 00 00 00<br>
-  tel: 03 20 00 00 00</p>
-
-  <P class="mail"> Moreau.sa@gmail.com</p>
-  <a class="mentions légales" href="https://url.com/" > Mentions légales</a>
-</footer>
-
 <main>
-
   <section id="projectcards">
     <!-- clickable card to create a new project. will open a pop up form -->
       <h2>Projets en cours</h2>
@@ -58,9 +48,24 @@
 <!-- clickable card with principal items of the project -->
     <article>
 
-      <h3 class="ProjectName" >"Nom du projet"</h3>
+      <h3 class="ProjectName" >Nom du projet</h3>
+      <p>Fin: 01/01/2018<p>
+      <p><progress class="avancement" value="50" max="100"></progress></p>
 
-          <p>Deadline<p>
+      <ul class="coworker">
+        <li> cowerkeruser</li>
+        <li> cowerker1</li>
+        <li> cowerker2</li>
+        <li> cowerker3</li>
+      </ul>
+     <p> class="description"> description du projet</p>
+    </article>
+
+    <article>
+
+      <h3 class="ProjectName" >Nom du projet</h3>
+
+          <p>Fin: 01/01/2018<p>
           <p><progress class="avancement" value="50" max="100"></progress></p>
 
         <ul class="coworker">
@@ -76,9 +81,9 @@
 
     <article>
 
-      <h3 class="ProjectName" >"Nom du projet"</h3>
+      <h3 class="ProjectName" >Nom du projet</h3>
 
-          <p>Deadline<p>
+          <p>Fin: 01/01/2018<p>
           <p><progress class="avancement" value="50" max="100"></progress></p>
 
         <ul class="coworker">
@@ -94,27 +99,9 @@
 
     <article>
 
-      <h3 class="ProjectName" >"Nom du projet"</h3>
+      <h3 class="ProjectName">Nom du projet</h3>
 
-          <p>Deadline<p>
-          <p><progress class="avancement" value="50" max="100"></progress></p>
-
-        <ul class="coworker">
-          <li> cowerkeruser</li>
-          <li> cowerker1</li>
-          <li> cowerker2</li>
-          <li> cowerker3</li>
-        </ul>
-
-          <p class="description"> description du projet</p>
-
-    </article>
-
-    <article>
-
-      <h3 class="ProjectName" >"Nom du projet"</h3>
-
-          <p>Deadline<p>
+          <p>Fin: 01/01/2018<p>
           <p><progress class="avancement" value="50" max="100"></progress></p>
 
         <ul class="coworker">
@@ -131,6 +118,20 @@
   </section>
 
 </main>
+<footer>
+<!-- informations about the society and contacts administrator and légal notice -->
+    <p class="adresse">société Moreau SA<br>
+  12, rue du puit<br>
+  59100 ROUBAIX 20 00 00 00<br>
+  tel: 03 20 00 00 00</p>
+    <P class="adresse"> Moreau.sa@gmail.com</p>
+<div class="admin">
+    <p class= "admin">administrateur du site: IP </p>
+    <p class= "admin">contact: contact@mail.com</p>
+    <a class="admin" href="https://url.com/" > Mentions légales</a>
+</div>
+</footer>
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
